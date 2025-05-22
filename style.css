@@ -1,0 +1,150 @@
+@import url('https://fonts.cdnfonts.com/css/huntesla-gloficka');
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.form-title {
+    text-align: center;
+    color: aquamarine;
+    font-size: 32px;
+    font-family: 'Huntesla Gloficka', sans-serif;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 2px dashed #00ffff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: aquamarine;
+    padding: 0 10px;
+}
+
+table {
+    width: 100%;
+}
+
+input[required], textarea, input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #888;
+    background-color: #fff9e6;
+    color: #222;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #c82929;
+}
+
+.radio-group label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.radio-group label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+input#male:checked + label::after {
+    background-color: blue;
+    opacity: 1;
+}
+
+input#female:checked + label::after {
+    background-color: hotpink;
+    opacity: 1;
+}
+
+input#other:checked + label::after {
+    background-color: brown;
+    opacity: 1;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: aqua;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-group button[type="submit"] {
+    background-color: #00aaaa;
+    color: white;
+}
+
+.button-group button[type="submit"]:hover {
+    background-color: #00cccc;
+    transform: scale(1.05);
+}
+
+.button-group button[type="reset"] {
+    background-color: #333;
+    color: white;
+}
+
+.button-group button[type="reset"]:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
